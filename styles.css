@@ -258,7 +258,8 @@ input {
     visibility: hidden;
 }
 
-.show__menu .menu__open {
+.menu__open .show__menu,
+.menu__open .close__btn {
     visibility: visible;
 }
 
