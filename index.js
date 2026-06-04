@@ -7,5 +7,5 @@ function togglemenu() {
         return document.body.classList.remove("menu__open")
     }
     isMenuOpen = true;
-    document.body.clasList += ' menu__open'
+    document.header.clasList += ' menu__open'
 }
