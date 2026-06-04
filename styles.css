@@ -206,12 +206,12 @@ input {
 }
 
 .search__btn {
-    width: 200px;
+    width: 150px;
     margin-left: 20px;
     font-size: 40px;
     color: #fff;
     background-color: #6030b1;
-    border-radius: 1px solid #6030b1;
+    border: 1px solid #6030b1;
     border-color: #6030b1;
     border-radius: 20px;
     transition: all ease 300ms;
@@ -220,7 +220,7 @@ input {
 
 .search__btn:hover {
     background-color: #ff328f;
-    border-radius: 1px solid #ff328f;
+    border: 1px solid #ff328f;
 }
 
 .img__landing {
@@ -241,6 +241,33 @@ input {
 
 }
 
+/* Phone Menu */ 
+
+.show__menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 400ms ease all;
+    visibility: hidden;
+}
+
+.show__menu .menu__open {
+    visibility: visible;
+}
+
+.menu__link {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 64px;
+    color: rgb(96, 48, 177);
+}
 
 /* Phones */
 
@@ -251,6 +278,15 @@ input {
     .menu {
         visibility: visible;
         cursor: pointer;
+    }
+    .input__wrapper {
+        flex-direction: column;
+    }
+    .search__btn {
+        max-width: none;
+        width: 100%;
+        margin: 20px 0 0 0;
+        align-items: center;
     }
 }
 
